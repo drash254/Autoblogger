@@ -1,0 +1,123 @@
+.plan {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px; /* Adjust this value for the amount of overlap */
+    width: calc(100% + 20px); /* Should match the amount of left offset */
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity if needed */
+    z-index: -1;
+    border-radius: 8px;
+    transform: rotate(-3deg) translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+}
+
+.plan:hover::before {
+    transform: rotate(-3deg) translateY(-10px);
+}
+
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f3f3f3; /* Change this color as needed */
+    padding: 20px 0;
+    text-align: center;
+    z-index: 999; /* Ensure the footer stays on top */
+    padding-bottom: 2%;
+}
+
+/* Custom styles for the header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background-image: linear-gradient(to right, #4e4cb8, #8f8fc3);
+    height: 60px; /* Reduced size by default */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header:hover {
+    height: 100px; /* Expanded size on hover */
+    background-image: linear-gradient(to right, #4e4cb8, #8f8fc3);
+}
+
+header h1 {
+    font-size: 24px; /* Adjust the font size */
+    transition: font-size 0.3s ease-in-out;
+}
+
+header:hover h1 {
+    font-size: 32px; /* Increased font size on hover */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    opacity: 0.7; /* Reduced opacity on hover */
+}
+
+header h1{
+    /* Define keyframes for shaking animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Enlarge letters on hover */
+  #animatedText{
+    transform: scale(1.2);
+  }
+  
+  /* Apply animation to each letter in the h1 */
+  #animatedText span {
+    display: inline-block;
+    animation: shake 0.4s ease-in-out infinite;
+  }
+  
+}
+
+.container h2 mx-auto px-4{
+    margin-top: 20px;
+}

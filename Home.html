@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoBlog Landing Page</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Material UI Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Your custom styles -->
+    <link href="home.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container mx-auto flex items-center justify-between">
+          <h1 class="text-4xl font-bold">
+            <span id="animatedText">A</span>
+            <span id="animatedText">u</span>
+            <span id="animatedText">t</span>
+            <span id="animatedText">o</span>
+            <span id="animatedText">B</span>
+            <span id="animatedText">l</span>
+            <span id="animatedText">o</span>
+            <span id="animatedText">g</span>
+          </h1>
+          <nav>
+            <ul class="flex space-x-6">
+              <li><a href="Home.html" class="hover:underline">Home</a></li>
+              <li><a href="#" class="hover:underline">About</a></li>
+              <li><a href="#" class="hover:underline">Blog</a></li>
+              <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+
+    <main class="py-12">
+
+        <section class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Welcome to AutoBlog</h2>
+            <p class="text-lg mb-6">
+                Explore the latest articles on various topics curated just for you.
+            </p>
+
+            <button
+                class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md shadow-md transition duration-300 ease-in-out" >
+                Get Started
+            </button>
+        </section>
+
+
+
+        <!-- Within the main section -->
+
+        <section class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Subscription Plans</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Free Plan -->
+                <div class="plan">
+                    <h3 class="text-xl font-bold mb-4">Free Plan</h3>
+                    <!-- ... Other content -->
+                    <ul class="text-gray-600 mb-6">
+                        <!-- Features of the Basic Plan -->
+                        <ul class="text-gray-600 mb-6">
+                            <li>Access to curated articles</li>
+                            <li>Weekly newsletter</li>
+                            <li>Community forum access</li>
+                            <li>24/7 customer support</li>
+                            <!-- Add more features -->
+                        </ul>
+                        <button
+                            class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md shadow-md transition duration-300 ease-in-out">
+                            Start Now
+                            
+                        </button>
+                </div>
+
+                <!-- Standard Plan -->
+                <div class="plan">
+                    <h3 class="text-xl font-bold mb-4">Standard Plan</h3>
+                    <!-- ... Other content -->
+                    <ul class="text-gray-600 mb-6 list-disc pl-4">
+                        <li>From $99/month per</li>
+                        <li>50 articles per month</li>
+                        <li>AutoBlog available</li>
+                        <li>Unlimited topic suggestions</li>
+                        <li>Unlimited exclusive images</li>
+                        <li>WordPress Integration</li>
+                        <li>Integration via Webhook</li>
+                    </ul>
+                    <button
+                        class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md shadow-md transition duration-300 ease-in-out">
+                        Sign Up
+                    </button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="plan">
+                    <h3 class="text-xl font-bold mb-4">Premium Plan</h3>
+                    <!-- ... Other content -->
+                    <ul class="text-gray-600 mb-6 list-disc pl-4">
+                        <li>Unlimited articles</li>
+                        <li>AutoBlog available</li>
+                        <li>Unlimited topic suggestions</li>
+                        <li>Unlimited exclusive images</li>
+                        <li>WordPress Integration</li>
+                        <li>Integration via Webhook</li>
+                    </ul>
+                    <button
+                        class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md shadow-md transition duration-300 ease-in-out">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <footer class="bg-gray-200 py-6 text-center">
+        <p>© 2023 AutoBlog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
